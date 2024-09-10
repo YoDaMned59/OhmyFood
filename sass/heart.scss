@@ -1,0 +1,28 @@
+.fa_heart {
+  color: black;
+  margin-right: 25px;
+    .fa-regular {
+      font-size: 28px;
+      position: absolute;
+      opacity: 1;
+      transition: 500ms ease-in-out;
+      &:hover {
+        opacity: 0;
+      }
+    }
+    .fa-solid {
+      position: relative;
+      background: linear-gradient(
+        340deg,
+        #9356DC -5.2%,
+        #FF79DA 110.74%);
+      background-clip: text;
+      color: transparent;
+      font-size: 28px;
+      opacity: 0;
+      transition: opacity 500ms ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }

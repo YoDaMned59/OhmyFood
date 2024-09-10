@@ -1,0 +1,22 @@
+.headerContainer {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    position: relative;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .header-Arrow {
+        position: absolute;
+        color: #353535;
+        font-size: 18px;
+        left: 25px;
+    }
+
+}

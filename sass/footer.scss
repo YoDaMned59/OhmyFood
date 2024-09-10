@@ -1,0 +1,51 @@
+.footerContainer {
+    background-color: rgba(53, 53, 53, 1);
+    padding-left: 25px;
+
+    .titleFooter {
+        color: white;
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 22px;
+        padding-bottom: 16px;
+    }
+
+    ul {
+        padding-bottom: 22px;
+    }
+
+    li {
+        color: white;
+        list-style: none;
+        padding-bottom: 7px;
+    }
+
+    li :first-child {
+        padding-right: 13px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .titleFooter {
+        margin-top: 35px;
+        margin-right: 25px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin-right: 15px;
+    }
+
+    li {
+        margin-top: 64px;
+        margin-right: 20px;
+    }
+}

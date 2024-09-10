@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "ohmyfooproject",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch sass/index.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoDaMned59/OhmyFood.git"
+  },
+  "author": "duvivier sébastien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoDaMned59/OhmyFood/issues"
+  },
+  "homepage": "https://github.com/YoDaMned59/OhmyFood#readme",
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}
