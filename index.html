@@ -18,18 +18,12 @@
 </head>
 
 <body>
-	<!--
-	<div class="loader"></div>
-		<div class="loader__itemContainer">
-			<div class="loader__item loader__item--1"></div>
-			<div class="loader__item loader__item--2"></div>
-			<div class="loader__item loader__item--3"></div>
-		</div>
+	<div class="container-loader">
+		<div class="circle-loader"></div>
 	</div>
-	-->
 	<header class="headerContainer">
 		<section class="logo">
-			<img src="Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Ohmyfood">
+			<img src="assets/ohmyfood.png" alt="Ohmyfood">
 		</section>
 	</header>
 	<main>
@@ -51,102 +45,105 @@
 			<div class="tilteFonction">
 				<h2>Fonctionnement</h2>
 			</div>
-			<ul>
-				<div>
-					<span class="circle">1</span>
-					<li>
-						<i class="fa-solid fa-mobile-screen" style="color: #7e7e7e;"></i>
-						<strong>Choisissez un restaurant</strong>
-					</li>
-				</div>
-				<div>
-					<span class="circle">2</span>
-					<li>
-						<i class="fa-sharp fa-solid fa-list-ul" style="color: #7e7e7e;"></i>
-						<strong>Composez votre menu</strong>
-					</li>
-				</div>
-				<div>
-					<span class="circle">3</span>
-					<li>
-						<i class="fa-solid fa-store" style="color: #9356dc;"></i>
-						<strong>Dégustez au restaurant</strong>
-					</li>
-				</div>
-			</ul>
+				<ul>
+					<div class="fonctionElement" >
+						<span class="circle">1</span>
+						<li>
+							<i class="fa-solid fa-mobile-screen" style="color: #7e7e7e;"></i>
+							<strong>Choisissez un restaurant</strong>
+						</li>
+					</div>
+					<div class="fonctionElement" >
+						<span class="circle">2</span>
+						<li>
+							<i class="fa-sharp fa-solid fa-list-ul" style="color: #7e7e7e;"></i>
+							<strong>Composez votre menu</strong>
+						</li>
+					</div>
+					<div class="fonctionElement" >
+						<span class="circle">3</span>
+						<li>
+							<i class="fa-solid fa-store" style="color: #9356dc;"></i>
+							<strong>Dégustez au restaurant</strong>
+						</li>
+					</div>
+				</ul>
 		</section>
 		<h2 id="restaurantsList" class="titleContainer">Restaurants</h2>
-		<section class="restaurants">
-			<a href="restaurants/LaPaletteDuGout.html">
-				<article class="cards">
-					<div class="images"><img src="assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-							alt="carte restaurant la palette du goût">
-						<p class="new">Nouveau</p>
-					</div>
-					<div class="restaurantContainer">
+		<section class="restaurantsContainer">
+			<div class="restaurants">
+				<a href="restaurants/LaPaletteDuGout.html">
+					<article class="cards">
+						<div class="images"><img src="assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+								alt="carte restaurant la palette du goût">
+							<p class="new">Nouveau</p>
+						</div>
+						<div class="restaurantContainer">
+							<div>
+								<h3>La palette du goût</h3>
+								<p>Ménilmontant</p>
+							</div>
+							<div class="fa_heart">
+								<i class="fa-regular fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</div>
+						</div>
+					</article>
+				</a>
+				<a href="restaurants/LaNoteEnchantee.html">
+					<article class="cards">
+						<div class="images"><img src="assets/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+							<p class="new">Nouveau</p>
+						</div>
+						<div class="restaurantContainer">
+							<div>
+								<h3>La note enchantée</h3>
+								<p>Charonne</p>
+							</div>
+							<div class="fa_heart">
+								<i class="fa-regular fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</div>
+						</div>
+					</article>
+				</a>
+				<a href="restaurants/ALaFrançaise.html">
+					<article class="cards">
+						<div class="images">
+							<img src="assets/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+								alt="carte restaurant à la française">
+						</div>
+						<div class="restaurantContainer">
+							<div>
+								<h3>À la française</h3>
+								<p>Cité Rouge</p>
+							</div>
+							<div class="fa_heart">
+								<i class="fa-regular fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</div>
+						</div>
+					</article>
+				</a>
+				<a href="restaurants/LeDéliceDesSens.html">
+					<article class="cards">
 						<div>
-							<h3>La palette du goût</h3>
-							<p>Ménilmontant</p>
+							<img src="assets/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+								alt="carte restaurant le délice des sens">
 						</div>
-						<div class="fa_heart">
-							<i class="fa-regular fa-heart"></i>
-							<i class="fa-solid fa-heart"></i>
+						<div class="restaurantContainer">
+							<div>
+								<h3>Le délice des sens</h3>
+								<p>Folie-Méricourt</p>
+							</div>
+							<div class="fa_heart">
+								<i class="fa-regular fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</div>
 						</div>
-					</div>
-				</article>
-			</a>
-			<a href="restaurants/LaNoteEnchantee.html">
-				<article class="cards">
-					<div class="images"><img src="assets/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-						<p class="new">Nouveau</p>
-					</div>
-					<div class="restaurantContainer">
-						<div>
-							<h3>La note enchantée</h3>
-							<p>Charonne</p>
-						</div>
-						<div class="fa_heart">
-							<i class="fa-regular fa-heart"></i>
-							<i class="fa-solid fa-heart"></i>
-						</div>
-					</div>
-				</article>
-			</a>
-			<a href="restaurants/ALaFrançaise.html">
-				<article class="cards">
-					<div class="images">
-						<img src="assets/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="carte restaurant à la française">
-					</div>
-					<div class="restaurantContainer">
-						<div>
-							<h3>À la française</h3>
-							<p>Cité Rouge</p>
-						</div>
-						<div class="fa_heart">
-							<i class="fa-regular fa-heart"></i>
-							<i class="fa-solid fa-heart"></i>
-						</div>
-					</div>
-				</article>
-			</a>
-			<a href="restaurants/LeDéliceDesSens.html">
-				<article class="cards">
-					<div>
-						<img src="assets/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-							alt="carte restaurant le délice des sens">
-					</div>
-					<div class="restaurantContainer">
-						<div>
-							<h3>Le délice des sens</h3>
-							<p>Folie-Méricourt</p>
-						</div>
-						<div class="fa_heart">
-							<i class="fa-regular fa-heart"></i>
-							<i class="fa-solid fa-heart"></i>
-						</div>
-					</div>
-				</article>
-			</a>
+					</article>
+				</a>
+			</div>
 		</section>
 	</main>
 	<footer class="footerContainer">

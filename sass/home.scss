@@ -6,6 +6,14 @@
     margin: 0%;
 }
 
+p {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
 body {
     background-color: white;
     padding: 0;
@@ -76,16 +84,22 @@ body {
 
 /*Fonctionnement*/
 .fonctionContainer {
-    justify-content: space-around;
-    background-color: white;
     display: flex;
+    width: 86%;
+    margin-left: 6%;
     flex-direction: column;
     margin-top: 35px;
     gap: 15px;
     padding-left: 20px;
-    padding-top: 40px;
     padding-right: 20px;
 
+    .fonctionElement{
+       margin-right: 24px;
+
+       li{
+        margin-right: 0;
+       }
+    }
     .tilteFonction {
         padding-bottom: 26px;
     }
@@ -112,7 +126,6 @@ body {
     ul {
         list-style: none;
         margin-bottom: 11px;
-
     }
 
     li {
@@ -138,52 +151,64 @@ body {
 .titleContainer {
     padding-top: 54px;
     padding-left: 20px;
+    padding-bottom: 48px;
+    background: rgba(246, 246, 246, 1);
 }
 
-.restaurants {
-    margin-bottom: 66px;
+.restaurantsContainer {
+    display: flex;
+    background: rgba(246, 246, 246, 1);
+    flex-direction: column;
+    align-items: center;
 
-    h2 {
-        padding-top: 52px;
-        padding-left: 20px;
-    }
 
-    .cards {
-        background-color: white;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: 20px;
-        margin-left: 18px;
-        margin-right: 18px;
-        margin-bottom: 18px;
-        border-radius: 20px;
-        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, .07);
-    }
+    .restaurants {
+        width: 85%;
+        margin-bottom: 66px;
 
-    img {
-        width: 100%;
-        height: 175px;
-        object-fit: cover;
-        padding-bottom: 16px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
+        h2 {
+            padding-top: 52px;
+            padding-left: 20px;
+        }
 
-    h3 {
-        color: black;
-        padding-left: 10px;
-        padding-bottom: 5px;
-        padding-left: 13px;
-    }
+        .cards {
+            background-color: white;
+            margin-bottom: 18px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 5px rgba(0, 0, 0, .07);
+            padding-bottom: 12px;
+        }
 
-    p {
-        color: black;
-        padding-left: 13px;
-        padding-bottom: 12px;
-    }
+        .restaurantContainer {
+            display: flex;
+            justify-content: space-between;
 
-    a {
-        text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: 175px;
+            object-fit: fill;
+            padding-bottom: 16px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        h3 {
+            color: black;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            padding-left: 13px;
+        }
+
+        p {
+            color: black;
+            padding-left: 13px;
+        }
+
+        a {
+            text-decoration: none;
+        }
     }
 }
 
@@ -200,17 +225,40 @@ body {
         right: 12px;
     }
 }
-
-.restaurantContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
-
+@media (min-width: 768px) {
+    .fonctionContainer {
+        .tilteFonction {
+            margin-left: -20px;
+        }
+    }
+    }
 @media (min-width : 1024px) {
 
-    .restaurants {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .titleContainer {
+        padding-left: 6%;
     }
+
+    .restaurantsContainer {
+
+        .restaurants {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            img {
+                object-fit: cover;
+            }
+        }
     }
+
+    .fonctionContainer {
+
+        ul {
+            justify-content: center;
+        }
+
+        h2 {
+            margin-left: 20px;
+        }
+    }
+}
