@@ -76,60 +76,63 @@ body {
 }
 
 /*Fonctionnement*/
-.fonctionContainer {
+.fonction_titre {
+  width: 275px;
+  height: 31px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.fonction {
   display: flex;
-  width: 86%;
-  margin-left: 6%;
   flex-direction: column;
-  margin-top: 35px;
-  gap: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 20px 20px 50px;
+  gap: 0px;
+  top: 400px;
 }
-.fonctionContainer .fonctionElement {
-  margin-right: 24px;
-}
-.fonctionContainer .fonctionElement li {
-  margin-right: 0;
-}
-.fonctionContainer .tilteFonction {
-  padding-bottom: 26px;
-}
-.fonctionContainer .circle {
+.fonction_btn {
   display: flex;
-  position: absolute;
+  flex-wrap: wrap;
+  width: 335px;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  left: 20px;
+}
+.fonction_number {
+  background-color: #9747ff;
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  display: flex;
   justify-content: center;
-  width: 100%;
-  text-align: center;
-  width: 24px;
-  height: 24px;
-  background-color: #9747FF;
-  color: white;
-  border-radius: 50%;
-  margin-top: 27px;
-  margin-left: -8px;
-}
-.fonctionContainer span {
   align-items: center;
+  margin-left: -10px;
 }
-.fonctionContainer ul {
-  list-style: none;
-  margin-bottom: 11px;
-}
-.fonctionContainer li {
-  background-color: rgb(246, 246, 246);
+.fonction_content {
+  display: flex;
+  align-items: center;
   border-radius: 20px;
-  padding-top: 30px;
-  padding-right: 38px;
-  padding-bottom: 30px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
-  margin-top: auto;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  height: 70px;
+  margin: 12px;
+  width: 100%;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
-.fonctionContainer li :first-child {
-  color: rgb(126, 126, 126);
-  padding-left: 45px;
-  padding-right: 20px;
+.fonction_icon {
+  color: #7e7e7e;
+  margin: 20px;
+}
+.fonction_texte {
+  margin: 10px;
 }
 
 /*Cards*/
@@ -207,7 +210,7 @@ body {
 }
 @media (min-width: 1024px) {
   .titleContainer {
-    padding-left: 6%;
+    padding-left: 90px;
   }
   .restaurantsContainer .restaurants {
     display: grid;
@@ -217,11 +220,13 @@ body {
   .restaurantsContainer .restaurants img {
     object-fit: cover;
   }
-  .fonctionContainer ul {
-    justify-content: center;
+  .fonction_titre {
+    margin-left: 90px;
   }
-  .fonctionContainer h2 {
-    margin-left: 20px;
+  .fonction {
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
   }
 }
 .headerContainer {
