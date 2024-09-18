@@ -9,29 +9,30 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<!--Loader-->
 	<div class="container-loader">
 		<div class="circle-loader"></div>
 	</div>
-	<!--header-->
 	<header class="headerContainer">
-		<div class="logo">
+		<section class="logo">
 			<img src="assets/ohmyfood.png" alt="Ohmyfood">
-		</div>
+		</section>
 	</header>
 	<main>
-		<!--location-->
-		<div class="locationContainer">
+		<section class="locationContainer">
 			<span><i class="fa-solid fa-location-dot" style="color: #353535;"></i></span>
-			<span>Bonjour, Belleville</span>
-		</div>
+			<span>
+				<form action="Paris, Belleville" method="get">Paris, Belleville</form>
+			</span>
+		</section>
 		<section class="sectionTitle">
 			<h1>Réservez le menu qui vous convient</h1>
 			<p>Découvrez des restaurants d'exceptions, sélectionnés par nos soins.</p>
@@ -40,7 +41,6 @@
 					Explorez nos restaurants</a>
 			</div>
 		</section>
-		<!--fonction-->
 		<h2 class="fonction_titre">Fonctionnement</h2>
 		<div class="fonction">
 			<div class="fonction_btn">
@@ -65,9 +65,8 @@
 				</div>
 			</div>
 		</div>
-		<!--restaurants-->
 		<h2 id="restaurantsList" class="titleContainer">Restaurants</h2>
-		<div class="restaurantsContainer">
+		<section class="restaurantsContainer">
 			<div class="restaurants">
 				<a href="restaurants/LaPaletteDuGout.html">
 					<article class="cards">
@@ -141,7 +140,7 @@
 					</article>
 				</a>
 			</div>
-		</div>
+		</section>
 	</main>
 	<footer class="footerContainer">
 		<h4 class="titleFooter">ohmyfood</h4>

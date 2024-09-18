@@ -21,13 +21,12 @@ body {
   margin: 0;
 }
 
-/*location*/
 .locationContainer {
-  position: relative;
   display: flex;
   height: 50px;
   justify-content: center;
   background-color: rgb(234, 234, 234);
+  box-shadow: #008766;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .locationContainer span {
@@ -44,8 +43,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(246, 246, 246);
-  padding-bottom: 50px;
 }
 .sectionTitle h1 {
   text-align: center;
@@ -79,63 +76,60 @@ body {
 }
 
 /*Fonctionnement*/
-.fonction_titre {
-  width: 275px;
-  height: 31px;
-  margin-bottom: 20px;
-  margin-top: 25px;
-  font-family: Roboto, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  margin-left: 20px;
-}
-
-.fonction {
+.fonctionContainer {
   display: flex;
+  width: 86%;
+  margin-left: 6%;
   flex-direction: column;
-  margin: 20px 20px 50px;
-  gap: 0px;
-  opacity: 0px;
-  top: 400px;
+  margin-top: 35px;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.fonction_btn {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: roboto, sans-serif;
-  font-size: 16px;
-  left: 20px;
+.fonctionContainer .fonctionElement {
+  margin-right: 24px;
 }
-.fonction_number {
-  background-color: #9747ff;
-  color: #ffffff;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
+.fonctionContainer .fonctionElement li {
+  margin-right: 0;
+}
+.fonctionContainer .tilteFonction {
+  padding-bottom: 26px;
+}
+.fonctionContainer .circle {
   display: flex;
+  position: absolute;
   justify-content: center;
-  align-items: center;
-  margin-left: -10px;
-}
-.fonction_content {
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #f6f6f6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  height: 70px;
-  margin: 12px;
   width: 100%;
-  cursor: pointer;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  background-color: #9747FF;
+  color: white;
+  border-radius: 50%;
+  margin-top: 27px;
+  margin-left: -8px;
 }
-.fonction_icon {
-  color: #7e7e7e;
-  margin: 20px;
+.fonctionContainer span {
+  align-items: center;
 }
-.fonction_texte {
-  margin: 10px;
+.fonctionContainer ul {
+  list-style: none;
+  margin-bottom: 11px;
+}
+.fonctionContainer li {
+  background-color: rgb(246, 246, 246);
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-right: 38px;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
+  margin-top: auto;
+}
+.fonctionContainer li :first-child {
+  color: rgb(126, 126, 126);
+  padding-left: 45px;
+  padding-right: 20px;
 }
 
 /*Cards*/
@@ -210,18 +204,10 @@ body {
   .fonctionContainer .tilteFonction {
     margin-left: -20px;
   }
-  .restaurantsContainer .restaurants {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .restaurantsContainer .restaurants img {
-    object-fit: cover;
-  }
 }
 @media (min-width: 1024px) {
   .titleContainer {
-    padding-left: 75px;
+    padding-left: 6%;
   }
   .restaurantsContainer .restaurants {
     display: grid;
@@ -231,13 +217,11 @@ body {
   .restaurantsContainer .restaurants img {
     object-fit: cover;
   }
-  .fonction_titre {
-    margin-left: 75px;
-  }
-  .fonction {
-    display: flex;
-    flex-direction: row;
+  .fonctionContainer ul {
     justify-content: center;
+  }
+  .fonctionContainer h2 {
+    margin-left: 20px;
   }
 }
 .headerContainer {
